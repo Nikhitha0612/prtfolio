@@ -281,6 +281,28 @@ section{
         margin-top: 15px;
     }
 }
+section {
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+#home {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: black;
+}
+
+#skills {
+    background-color: black;
+}
+
+#contact {
+    background-color: black;
+}
+
 
 
 
