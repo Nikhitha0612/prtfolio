@@ -293,13 +293,18 @@ section {
 
 #about {
     background-color: black;
+    h2 {
+        
+        color: green; /* Change title color to green */
+    }
+    
 }
 
 #skills {
     background-color: black;
 }
 
-#contact {
+#Projects {
     background-color: black;
 }
 
