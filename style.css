@@ -338,6 +338,25 @@ section {
     background-color: #077b32; /* Darker shade on hover */
 }
 
+.fireworks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, yellow, transparent);
+    animation: explode 1.5s ease-out;
+    z-index: 1000;
+}
+
+@keyframes explode {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+
+
+
 
 
 
