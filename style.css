@@ -337,7 +337,6 @@ section {
 .home-button:hover {
     background-color: #077b32; /* Darker shade on hover */
 }
-
 .fireworks {
     position: absolute;
     top: 50%;
@@ -351,12 +350,8 @@ section {
 
 @keyframes explode {
     0% { transform: scale(0); opacity: 1; }
-    100% { transform: scale(3); opacity: 0; }
+    100% { transform: scale(3); opacity: 0; }
 }
-
-
-
-
 
 
 

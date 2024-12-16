@@ -45,28 +45,9 @@ function eraseText(){
 }
 
 window.onload = typeWriter
-
 document.getElementById('fireworksButton').addEventListener('click', () => {
     const fireworks = document.createElement('div');
     fireworks.classList.add('fireworks');
     document.body.appendChild(fireworks);
     setTimeout(() => fireworks.remove(), 1500);
 });
-
-window.addEventListener('deviceorientation', (event) => {
-    const tilt = event.gamma; // left/right tilt
-    const dimAmount = Math.min(Math.abs(tilt) / 90, 1);
-    document.body.style.background = `rgba(0, 0, 0, ${dimAmount})`;
-});
-
-const hammer = new Hammer(document.body);
-hammer.on('swipeleft', () => navigateToNextSection());
-hammer.on('swiperight', () => navigateToPreviousSection());
-
-const image = document.querySelector('.main-container .image img');
-window.addEventListener('deviceorientation', (event) => {
-    const xTilt = event.beta; // front/back tilt
-    const yTilt = event.gamma; // left/right tilt
-    image.style.transform = `rotateX(${xTilt / 10}deg) rotateY(${yTilt / 10}deg)`;
-});
-
